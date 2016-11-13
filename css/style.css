@@ -60,10 +60,6 @@ html {
     text-align: center;
 }
 
-.social-list {
-    background-color: #373737;
-}
-
 .footer-bottom a {
     color: #fff;
 }
@@ -111,7 +107,7 @@ html {
 }
 
 .blog-tease {
-    height: 210px;
+    min-height: 210px;
 }
 
 .page-header .btn {
@@ -162,7 +158,7 @@ html {
 .portfolio-title {
     color: white;
     text-align: center;
-    height: 308px;
+    height: 290px;
     position: absolute;
     z-index: 10;
     top: 0;
@@ -299,6 +295,7 @@ h1 {
 
 h2 {
     color: #333;
+    margin: 0px;
 }
 
 h3 {
@@ -321,9 +318,6 @@ a {
     background-color: #dcdfe1;
 }
 
-footer {
-    background-color: #55677b;
-}
 
 footer h4 {
     color: #fff;
@@ -335,12 +329,12 @@ footer h4 {
 }
 
 .page-header {
-    background-color: #cfe;
+    background-color: #75dee5;
     color: #fff;
 }
 
 .message {
-    background-color: #0fc;
+    background-color: #75dee5;
 }
 
 .message h3 {
@@ -364,28 +358,23 @@ footer h4 {
 }
 
 .contentbox-turquoise {
-    background-color: #cfe;
+    background-color: #75dee5;
     padding: 10px;
     margin-bottom: 70px;
     min-height: 10px;
 }
 
-.content>img {
-    float: left;
-    margin-right: 15px;
-}
-
-.content>img {
+.contentbox>img {
     float: left;
     margin-right: 15px;
 }
 
 .tile {
-    background-color: #cfe;
+    background-color: #75dee5;
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin: 0px;
+    margin: 0px 0px 5px 5px;
 }
 
 .blog-tease {
@@ -407,6 +396,8 @@ body {
 
 h1 {
     font-size: 38px;
+    text-align: left;
+    padding-left: 5px;
 }
 
 h2 {
@@ -416,6 +407,7 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 200;
+    padding-left: 5px;
 }
 
 h4 {
@@ -455,7 +447,7 @@ ul {
 
 .page-header h1 {
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .page-header p {
@@ -464,7 +456,7 @@ ul {
 
 .page-header.home h1 {
     font-weight: normal;
-    text-align: center;
+    text-align: left;
 }
 
 .page-header.home p {
@@ -665,7 +657,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     border-radius: 4px;
 }
 
-input [type="submit"].btn {
+input[type="submit"].btn {
     border: 0;
     padding-top: 0;
     padding-right: 22px;
