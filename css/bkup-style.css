@@ -216,41 +216,25 @@ html {
     margin-left: 15px;
 }
 
-
-/*I can delete but I will keep it*/
-
-
-/*.container {
+.container {
     width: 960px;
     margin-right: auto;
     margin-left: auto;
-}*/
+}
 
-
-/*I can delete but I will keep it*/
-
-
-/*.column {
+.column {
     float: left;
     margin-right: 10px;
     margin-left: 10px;
     box-sizing: border-box;
-}*/
+}
 
-
-/* Beth said "Row class has been update with new properties. You can delete your previous version of .row class" (but I will keep this for better understanding!!) */
-
-
-/*.row {
+.row {
     overflow: hidden;
     width: 100%;
-}*/
+}
 
-
-/*I can delete but I will keep it*/
-
-
-/*.one-whole {
+.one-whole {
     width: 960px;
 }
 
@@ -276,7 +260,7 @@ html {
 
 .one-quarter {
     width: 220px;
-}*/
+}
 
 .alpha {
     margin-left: 0;
@@ -333,6 +317,7 @@ a {
 .main {
     background-color: #dcdfe1;
 }
+
 
 footer h4 {
     color: #fff;
@@ -634,12 +619,9 @@ ul {
     margin-left: 20px;
 }
 
-
 /*style contact form*/
-/*I can delete but I will keep it*/
-/*input[type="text"],
-input[type="email"],
-input[type="tel"] {
+
+input[type="text"], input[type="email"], input[type="tel"] {
     padding-top: 25px;
     padding-right: 0;
     padding-bottom: 25px;
@@ -654,11 +636,9 @@ input[type="tel"] {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-}*/
+}
 
-
-/*I can delete but I will keep it*/
-/*.contact-form input {
+.contact-form input {
     width: 445px;
 }
 
@@ -675,7 +655,7 @@ input[type="tel"] {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-}*/
+}
 
 input[type="submit"].btn {
     border: 0;
@@ -689,14 +669,10 @@ input[type="submit"].btn {
     width: 150px;
     -webkit-transition: background 0.5s ease 0s;
     -moz-transition: background 0.5s ease 0s;
-    transition: background 0.5s ease 0s;
+    transition: background 0.5s ease 0s;   
 }
 
-
-/*I can delete but I will keep it*/
-
-
-/*.form p {
+.form p {
     margin-bottom: 20px;
 }
 
@@ -723,16 +699,11 @@ input[type="submit"].btn {
     -webkit-transition: background 0.5s ease 0s;
     -moz-transition: background 0.5s ease 0s;
     transition: background 0.5s ease 0s;
-}*/
+}
 
+/*table styling*/ 
 
-/*table styling*/
-
-
-/*I can delete but I will keep it*/
-
-
-/*.contact-table {
+.contact-table {
     width: 99%;
     margin-bottom: 50px;
 }
@@ -756,7 +727,7 @@ input[type="submit"].btn {
     padding-left: 5px;
 }
 
-.contact-table td {
+.conatct-table td {
     color: #373737;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -770,68 +741,4 @@ input[type="submit"].btn {
 .contact-table tr:hover {
     background-color: #999;
     cursor: crosshair;
-}*/
-
-
-
-@import url(grid.css);
-@import url(form.css);
-@import url(table.css);
-
-/* Smartphone landscape */
-@media (min-width: 480px) {
-    
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    
-    /* Global */
-    .contentbox .one-half {
-        width: 344px;
-    }
-    
-    /* Portfolio */
-    /*NOTE: Delete the portfolio hover styles from the top of the CSS file so that they aren't rendering on small devices.*/
-    .portfolio-item {
-        position: relative;
-        margin-bottom: 10px;
-    }
-    .portfolio-title {
-        color: white;
-        text-align: center;
-        height: 243px;
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        padding: 10px;
-        -webkit-transition: opacity 0.3s ease 0s;
-        -moz-transition: opacity 0.3s ease-out;
-        -ms-transition: opacity 0.3s ease-out;
-        -o-transition: opacity 0.3s ease-out;
-        transition: opacity 0.3s ease 0s;
-    }
-    .portfolio-title:hover,
-    .portfolio-title:focus {
-        opacity: .9;
-        background-color: #5adae2;
-    }
-}
-
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    /* Global */
-    .contentbox .one-half {
-        width: 440px;
-    }
-    /* Portfolio */
-    .portfolio-title {
-        height: 308px;
-    }
-    .portfolio-title h2 {
-        margin-top: 40px;
-    }
 }
