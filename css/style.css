@@ -1,5 +1,8 @@
 /*comments--- box sizing*/
 
+@import url(grid.css);
+@import url(form.css);
+@import url(table.css);
 html {
     box-sizing: border-box;
 }
@@ -13,15 +16,30 @@ html {
 
 /*header*/
 
+.align-right {
+    text-align: right;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
 .brand {
     padding-top: 45px;
     padding-bottom: 45px;
 }
 
+.header {
+    display: flex;
+}
+
+/*
 .nav {
     padding-top: 60px;
     max-height: none;
 }
+*/
 
 .nav ul {
     width: auto;
@@ -31,42 +49,8 @@ html {
     float: right;
 }
 
-.nav li {
-    display: inline-block;
-    border: 0 none;
-    border-right: 1px solid #dedede;
-    /*float: none;
-    font-size: 18px;*/
-}
-
-.nav li:last-child {
-    border-right: 0 none;
-    border-bottom: 0 none;
-border-right: 0 none;
-}
-
-.nav a {
-    padding: 0px 10px;
-    -webkit-transition: color 0.3s ease 0s;
-    -moz-transition: color 0.3s ease-out;
-    -ms-transition: color 0.3s ease-out;
-    -o-transition: color 0.3s ease-out;
-    transition: color 0.3s ease-in-out;
-}
-
-.nav a:hover {
-    color: #5adae2;
-    background-color: transparent;
-}
-
-.active a {
-    color: #5adea2;
-}
 
 /* mobile nav */
-.menu-link {
-display: none;
-}
 
 
 /*footer*/
@@ -188,10 +172,12 @@ display: none;
     transition: opacity 0.3s ease 0s;
 }
 
+/*
 .portfolio-title:hover {
     background-color: #5adae2;
     opacity: .9;
 }
+*/
 
 
 /*blog*/
@@ -214,14 +200,6 @@ display: none;
 .photos img {
     padding-right: 10px;
     padding-bottom: 10px;
-}
-
-.info a:hover {
-    color: #5adae2;
-}
-
-.info i:hover {
-    color: #5adae2;
 }
 
 
@@ -801,14 +779,16 @@ input[type="tel"] {
     width: 100%;
 }
 
+
 /* Mobile navigation */
 
 .menu-link {
-    position: absolute;
+    /*position: absolute;*/
     right: 50px;
     /* adjust this value if need be */
     top: 60px;
     /* adjust this value if need be */
+    padding-right: 15px;  
 }
 
 .nav {
@@ -818,7 +798,7 @@ input[type="tel"] {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     overflow: hidden;
-    max-height: 0;
+/*    max-height: 0;*/
     /* zero height so nav is hidden */
 }
 
@@ -863,13 +843,13 @@ input[type="tel"] {
     /* turquoise */
 }
 
-@import url(grid.css);
-@import url(form.css);
-@import url(table.css);
 
 /* Smartphone landscape */
 
-@media (min-width: 480px) {
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
     
 }
 
@@ -880,6 +860,39 @@ input[type="tel"] {
     /* paste updated global rules here??? */
     .contentbox .one-half {
         width: 344px;
+    }
+    .menu-link {
+        display: none;
+    }
+    .nav li {
+        display: inline-block;
+        border: 0 none;
+        border-right: 1px solid #dedede;
+        /*float: none;
+    font-size: 18px;*/
+    }
+    
+    .nav li:last-child {
+        border-right: 0 none;
+        border-bottom: 0 none;
+        border-right: 0 none;
+    }
+    .nav a {
+        padding: 0px 10px;
+        -webkit-transition: color 0.3s ease 0s;
+        -moz-transition: color 0.3s ease-out;
+        -ms-transition: color 0.3s ease-out;
+        -o-transition: color 0.3s ease-out;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .nav a:hover {
+        color: #5adae2;
+        background-color: transparent;
+    }
+    
+    .active a {
+        color: #5adea2;
     }
     /* Portfolio */
     /*NOTE: Delete the portfolio hover styles from the top of the CSS file so that they aren't rendering on small devices.*/
@@ -908,6 +921,12 @@ input[type="tel"] {
         opacity: .9;
         background-color: #5adae2;
     }
+    .info a:hover {
+        color: #5adae2;
+    }
+    .info i:hover {
+        color: #5adae2;
+    }
 }
 
 
@@ -918,16 +937,13 @@ input[type="tel"] {
     .contentbox .one-half {
         width: 440px;
     }
-    
     /* Portfolio */
     .portfolio-title {
         height: 308px;
     }
-    
     .portfolio-title h2 {
         margin-top: 40px;
     }
-    
     .map iframe {
         width: 620px;
         height: 350px;
